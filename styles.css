@@ -4,7 +4,6 @@ body{
     background-image: url('img/fabric.png');
 }
 main{
-    /* background-color: #f9f9f9; */
     color: #333;
     overflow-wrap: break-word;
     min-height: 100vh;
@@ -16,7 +15,8 @@ header {
     display: flex;
     justify-content: center;
     font-size: 1.4em;
-    padding: 10px 0px 11px;
+    padding: 0px 0px 1px;
+    line-height: 0.3em;
     width: 100%;
     position: fixed;
     top: 0;
@@ -42,21 +42,45 @@ footer a{
     color: #444;
 }
 #content {
-    padding: 0rem 2rem;
+    padding: 0 2rem;
 }
 
-.imagebox{
-    position: relative; /* чтобы все внутри было относительно этого блока */
+.flexbox{
+    display: flex;
+    justify-content: right;
+    padding: 0 2em;
+    flex-wrap: wrap;
+    margin-bottom: 4em;
+}
+.flexbox > a{
+    width: 600px;
+    padding: 0 0 2rem;
+}
+.flexbox > p{
+    width: 300px;
+    text-align: right;
+    padding-right: 1.5em;
+    align-items: flex-end;
+    line-height: 1.56em;
+    color: #333;
+}
+.flexbox > a > div{
+    height: 250px;
+}
+
+.imagebox, .photobox{
+    position: relative; /* чтоб все внутри было относительно этого блока */
     width: 100%;
     overflow: hidden; /* чтоб картинка не выходила за пределы div*/
+    border-radius: 26px;
 }
-.imagebox img {
+.imagebox img, .photobox img {
     width: 100%;
     height: 100%;
     margin-bottom: -10px;
     object-fit: cover; /* покрывать весь div */
 }
-.imagebox > div{
+.imagebox > div, .photobox div{
     position: absolute;
     bottom: 0;
     left: 0;
@@ -67,9 +91,10 @@ footer a{
     padding-bottom: 0.5em;
     margin: 0;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 5em;
     
 }
-.article{
+.imagebox + div{
     font-size: 1.2em;
     text-indent: 1.2em;
     line-height: 1.4em;
@@ -84,6 +109,20 @@ ul {
     padding-right: 4em;
 }
 
+.gridcontent{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 столбца и безлимит строк */
+    gap: 2em;
+    padding-bottom: 1em;
+}
+
+audio {
+    width: 80%;
+    border-radius: 500px;
+    display: block;
+    margin: auto;
+}
+
 @media (min-width: 1250px) {
     .width1200{
         width: 95%;
@@ -91,26 +130,37 @@ ul {
         margin: 0 auto;
         padding: 0 0;
     }
-    .imagebox{
-        border-radius: 26px;
+    .imagebox + div{
+        text-align: justify;
     }
-    .imagebox div{
-        font-size: 5em;
+    .wide{
+        grid-column-end: span 2;
     }
 }
 @media (max-width: 1250px) {
+   
     .width1200{
         width: 100%;
         margin: 0 auto;
     }
-    .imagebox{
+    .imagebox, .photobox{
         border-radius: 2.3vw;
     }
-    .imagebox div{
+    .imagebox div, .photobox div{
         font-size: 6vw;
     }
     .title{
         padding: 0;
         font-size: 5vw;
+    }
+    .gridcontent{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2em;
+    }
+}
+@media (max-width: 600px){
+    header{
+        font-size: 3.5vw;
     }
 }

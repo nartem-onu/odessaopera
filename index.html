@@ -3,53 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Про театр</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img/icon.png" type="image/x-icon">
 </head>
 <body>
     <header>
-        <a href="index.html" style="color: #817256;"><b>Про театр</b></a>
-        <a href="history.html">Історія</a>
-        <a href="index.html">третья</a>
+        <ul style="display: flex; ">
+            <li><a href="index.html" style="color: #af9164;"><b>Головна</b></a></li>
+            <li><a href="about.html">Про театр</a></a></li>
+            <li><a href="history.html">Історія</a></li>
+            <li><a href="photos.html">Фото</a></li>
+            <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+        </ul>
     </header>
-    <main class="width1200" style="padding-top: 80px;">
-        <div id="content">  
-
-            <div class="title">
-                Одеський національний академічний театр опери та балету — найстаріший оперний театр України!
-            </div>
-            
-            &nbsp;
-
-            <div class="imagebox"><img src="img/theater.png">
-                <div>
-                    <span>Про театр</span>
-                    
+    <main class="width1200" style="padding-top: 80px; min-height: 100vh;">
+            <div id="content">  
+                <div class="title">
+                    Одеський національний академічний театр опери та балету
                 </div>
+                <p>&nbsp;</p>
+                
+                <div class="flexbox">       <!--FLEXBOX-->
+                    
+                    <p class="title" style="float: right;"><!--FLOAT-->
+                        <br>Дізнатись
+                    </p>
+                    <a href="about.html">
+                        <div class="imagebox"><img src="img/theaterfull.png">
+                            <div>Про театр</div>
+                        </div>
+                    </a>
+                    
+                    <p class="title" style="float: right;"><!--FLOAT-->
+                        <br>Побачити
+                    </p>
+                    <a href="history.html">
+                        <div class="imagebox"><img src="img/history/2.jpg">
+                            <div>Історію</div>
+                        </div>
+                    </a>
+                    
+                    <p class="title" style="float: right;"><!--FLOAT-->
+                        <br>Подивитись
+                    </p>
+                    <a href="photos.html">
+                        <div class="imagebox"><img src="img/photos/scene.jpg">
+                            <div>Фото</div>
+                        </div>
+                    </a>
+                </div>
+                
             </div>
-            
-            <div class="article">
-                <p>&nbsp;</p>
-
-                <p>Одеський національний академічний театр опери та балету входить до п’ятірки найкрасивіших театрів світу.</p>
-                
-                <p>Видання «Forbes» включило Одеську оперу до списку найбільш визначних пам’яток Східної Європи.</p>
-                
-                <p>Театр було побудовано протягом трьох років (з 1884 по 1887 рік) на місці Першого міського театру, який згорів у 1873 році. Реалізація проєкту обійшлася в півтора мільйона золотих рублів, будівлю театру оснастили за останнім словом техніки.</p>
-                
-                <p>Це перший оперний театр, побудований в Україні.</p>
-                
-                <p>Одеський театр опери та балету відіграє значну роль в культурному житті Європи.Саме тут, вперше на території України, прозвучали такі відомі й популярні опери, як «Севільській цирульник» Дж. Россіні, «Лючія ді Ламмермур», «Любовний напій» Г. Доніцетті, «Тоска» Дж. Пуччіні.</p>
-                
-                <p>У репертуарі театру понад 80 оперних, балетних, дитячих вистав та концертних програм. Одеський оперний – один з небагатьох театрів, де вiдбуваються концерти органної музики.</p>
-               
-                <p>&nbsp;</p>
-                <p>&nbsp;</p>
-              </div>
-
-        </div>
     </main>
-
+    
     <hr class="width1200" style="width: 99.8%; max-width: 1198px; background-color: #555; border: none; height: 1px;">
 
     <footer class="width1200" style="margin-bottom: -8px; padding-top: 1rem; padding-bottom: 1rem; display: block; text-align: center;">

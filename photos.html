@@ -3,47 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Фото</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img/icon.png" type="image/x-icon">
 </head>
 <body>
     <header>
-        <a href="index.html">Про театр</a>
-        <a href="history.html">Історія</a>
-        <a href="photos.html" style="color: #817256;"><b>Фото</b></a>
+        <ul style="display: flex; ">
+            <li><a href="index.html">Головна</a></li>
+            <li><a href="about.html">Про театр</a></a></li>
+            <li><a href="history.html">Історія</a></li>
+            <li><a href="photos.html" style="color: #af9164;"><b>Фото</b></a></li>
+            <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+        </ul>
     </header>
     <main class="width1200" style="padding-top: 80px;">
-        <div id="content" style="display: inline-block;">  <!-- inline-block -->
+        <div id="content"> 
 
             <div class="title">
-                Історія театру
+                Фото
             </div>
             
             <p>&nbsp;</p>
 
-            <div class="imagebox"><img src="img/history/1.jpg">
-                <div>
-                    <span>1810 - 1873<br> Перший міський театр</span>
-                    
+            <div class="gridcontent"> <!-- GRID -->
+
+                <div class="photobox wide"><img src="img/photos/otec.jpg">
+                    <div style="line-height: 2.2em; text-align: left; padding-left: 0.7em; top: 0; background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));">Зал</div>
                 </div>
+                
+                <div class="photobox"><img src="img/photos/scene.jpg">
+                </div>
+
+                <div class="photobox"><img src="img/photos/hall.jpg">
+                </div>
+                
+                <div class="photobox wide"><img src="img/photos/panoram.jpg">
+                    <div style="line-height: 2.2em; text-align: left; padding-left: 0.7em; top: 0; background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));">Екстер'єр</div>
+                </div>
+
+                <div class="photobox"><img src="img/photos/out.jpg">
+                </div>
+
+                <div class="photobox"><img src="img/photos/entrance.jpg">
+                </div>
+
+            </div>
+
+            <div>&nbsp;</div>
+            <div>&nbsp;</div>
+
+            <div class="gridcontent">
+
+                <div style="font-size: 1.2em; text-indent: 1.2em; line-height: 1.4em; display: block; margin: auto;">
+                    <p style="text-indent: 0; text-align: center;">Лакрімоза (Реквієм) В. А. Моцарта<br>у виконанні Одеської опери</p>
+                </div>
+
+                <audio controls>
+                    <source src="img/photos/sound.mp3" type="audio/mpeg">
+                </audio>
+
+            </div>
+
+            <div style="margin-top: 1em; margin-bottom: 5em;">
+                <a style=" text-decoration: none;" class="title" href="index.html">&lt;&nbsp; На головну</a>
             </div>
             
-            <div class="article">
-                <p>&nbsp;</p>
-
-                <p>На початку ХІХ століття Одеса вже мала театр, що не поступався кращим на той час європейським зразкам. Його було збудовано за ініціативи градоначальника, видатного державного діяча герцога Армана де Рішельє, якого одесити й дотепер називають «Дюком». Не зважаючи на безліч турбот – торгівельних, військових, будівельних – Рішельє знав, що Одеса – місто різнонаціональне та різномовне. Тож найкращим, що змогло би об’єднати людей була саме музика. Будівлю першого міського театру було зведено за проєктом італійця Франческо Фраполлі, значні зміни в план вніс Тома де Томон. 10 лютого 1810 року відбулося урочисте відкриття театру. Це була білосніжна споруда, звернена фасадом до порту. У залі налічувалось 800 місць (на той момент в місті проживало 12,5 тисячі чоловік). У ложах трьох ярусів було встановлено 44 крісла, позаду яких у великому напівкруглому просторі ще 700 глядачів могли насолоджуватися виставами стоячи. У мемуарних свідченнях зазначалось:
-                
-                <i>«Зала старого театру була триярусною, з сімнадцятьма ложами, а галерея – під самою стелею, така низька, що публіка майже торкалась її своїми головами. Люстри не було, її повісили пізніше. Зал освітлювався кенкетами, тобто канделябрами на п’ять свічок, прикріпленими до зовнішніх стін лож. Свічки були сальні й воскові. Сцена освітлювалась великими лампадами з олією. На галереї освітлення не було зовсім, тож світло зали й сцени видавалось тим, хто сидів на галереї, просто сліпучим. Театр мав свій особливий, специфічний запах від нагару свічок й дамських духів».</i>
-                
-                Регулярні вистави почалися з 1811 року. У репертуарі того часу були комедії, трагедії, водевілі та комічні опери. Незабаром у Міському театрі почала домінувати італійська опера. Монополію на постановки отримали антрепренери Дж. Монтовані, Й. Замбоні, Г. Буанаволіо та інші. До оперного репертуару першого Міського театру входили постановки Дж. Россіні, В. Белліні, Д. Чімароза, Г. Доніцетті, Дж. Верді. Одеська публіка аплодувала Катерині Аматті, Аррігі та Анжеліці Каталані, Джузеппе Маріні, Катерині Патті-Баріллі, Жозефіні й Терезині Бромбілла, Понті дель Армі, Альде Бьянкі. Саме тут, вперше на території сучасної України, прозвучали такі відомі й популярні опери, як «Севільській цирульник» Дж. Россіні, «Лючія ді Ламмермур», «Любовний напій» Г. Доніцетті, «Тоска» Дж. Пуччіні. У 1873-му Міський театр був повністю знищений пожежею. 
-                
-                <i>«Картина полум’я, що вирвалось назовні й вирувало на волі, була справді грандіозною. Колони котились майданом, ніби ганяючись за публікою, яка прийшла подивитись на пожежу»</i>
-                
-                , – писав автор книги «Стара Одеса» Олександр Дерибас. Від Міського театру залишився тільки попіл.</p>
-
-                <p>&nbsp;</p>
-              </div>
-
         </div>
     </main>
 
